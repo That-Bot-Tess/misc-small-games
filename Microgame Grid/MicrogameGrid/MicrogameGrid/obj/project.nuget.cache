@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ttg/2DR7RIi8CLID84NgXNyC1xFusF3VEFqCRx8KpHQsppkVF2y2KPzphvUARmy+Nc7St1sxPqbR129wS0BcEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ashro\\source\\misc-small-games\\Microgame Grid\\MicrogameGrid\\MicrogameGrid\\Microgame Grid.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ashro\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\ashro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}
