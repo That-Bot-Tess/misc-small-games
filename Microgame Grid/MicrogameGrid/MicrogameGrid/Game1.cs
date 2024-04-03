@@ -199,8 +199,8 @@ namespace Microgame_Grid
                         case 0:
                             _spriteBatch.DrawString(titleFont, "SOLVE\nPUZZLES", new(gridSlots[0].X + 10, gridSlots[0].Y + 70), Color.Black);
                             _spriteBatch.DrawString(titleFont, "ACT\nFAST", new(gridSlots[1].X + 50, gridSlots[1].Y + 70), Color.Black);
-                            _spriteBatch.DrawString(titleFont, "ONE\nMINUTE", new(gridSlots[2].X + 20, gridSlots[2].Y + 70), Color.Black);
-                            _spriteBatch.DrawString(UIfont, "Complete the short puzzles as fast as you can. \nObtain as many points as possible in one minute.", new(10, 720), Color.Black);
+                            _spriteBatch.DrawString(titleFont, "THIRTY\nSECONDS", new(gridSlots[2].X + 20, gridSlots[2].Y + 70), Color.Black);
+                            _spriteBatch.DrawString(UIfont, "Complete the short puzzles as fast as you can. \nObtain as many points as possible in 30 seconds.", new(10, 720), Color.Black);
                             break;
                         case 1:
                             ticTacToe.Draw(_spriteBatch, gridSlots);
