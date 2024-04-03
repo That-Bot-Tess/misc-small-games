@@ -18,15 +18,11 @@ namespace Microgame_Grid
         private Texture2D cross;
 
         private bool win;
-        private int winCount;
+       
 
         public override Rectangle? ClickedRect
         {
             get { return clickedRect; }
-        }
-        public int WinCount
-        {
-            get { return winCount; }
         }
         public override bool Win
         {
@@ -66,7 +62,7 @@ namespace Microgame_Grid
             return result;
         }
 
-        public void Update(MouseState[] state, Rectangle[] gridSlots)
+        public override void Update(MouseState[] state, Rectangle[] gridSlots)
         {
             if (LeftClick(state, gridSlots[2]))
             {
@@ -93,12 +89,11 @@ namespace Microgame_Grid
 
             if (win)
             {
-                Reset();
-                winCount++;
+                Game1.WinCount++;
             }
         }
 
-        public void Draw(SpriteBatch sb, Rectangle[] gridSlots, Rectangle? answer)
+        public override void Draw(SpriteBatch sb, Rectangle[] gridSlots)
         {
             int arraySlot = 0;
             for (int i = 0; i < Math.Sqrt(ticTacs.Length); i++)
@@ -117,9 +112,9 @@ namespace Microgame_Grid
                 }
             }
 
-            if (answer != null)
+            if (clickedRect != null)
             {
-                sb.Draw(cross, (Rectangle)answer, Color.White);
+                sb.Draw(cross, (Rectangle)clickedRect, Color.White);
             }
         }
 
@@ -144,7 +139,7 @@ namespace Microgame_Grid
             }
         }
 
-        private void Reset()
+        public override void Reset()
         {
             ticTacs = Setup();
             clickedRect = null;
